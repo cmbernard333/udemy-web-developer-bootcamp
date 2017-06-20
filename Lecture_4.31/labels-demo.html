@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Labels Demo</title>
+</head>
+<body>
+<h1>Login</h1>
+<form>
+    <!-- using <label> tag to surround individual elements in a form -->
+    <label>Username: 
+        <input name="username" type="text" placeholder="username">
+    </label>
+    <label>Password: 
+        <input name="password" type="password" placeholder="password">
+    </label>
+    <input type="submit">
+</form>
+
+<p>
+This form below is using the separate label syntax before each input in the form
+</p>
+
+<form>
+    <!-- using the 'for' attribute on <label> and 'id' attriute on <input> -->
+    <!-- notice that ordering of the <label> tags - they must come before their respective input tags -->
+    <label for="username">Username: </label>
+    <input id="username" type="text" placeholder="username">
+    <label for="password">Password: </label>
+    <input id="password" type="password" placeholder="password">
+    <input type="submit">
+</form>
+</body>
+</html>
