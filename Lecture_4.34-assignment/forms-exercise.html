@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms Exercise</title>
+</head>
+<body>
+<h1>Register</h1>
+<form>
+    <!-- first name-->
+    <div>
+    <label for="first_name">First Name:</label>
+    <input name="first_name" id="first_name" type="text" placeholder="John">
+    <!-- last name-->
+    <label for="last_name">Last Name:</label>
+    <input name="last_name" id="last_name" type="text" placeholder="Smith">
+    <div>
+
+    <div>
+    <!-- gender - grouped together with name="gender" -->
+    <label for="male">Male</label>
+    <input name="gender" id ="male" type="Radio">
+    <label for="female">Female</label>
+    <input name="gender" id="female" type="Radio">
+    <label for="other">Other</label>
+    <input name="gender" id="other" type="Radio">
+    </div>
+
+    <!-- email and password -->
+    <div> <!-- div is for grouping elements -->
+    <label for="email">Email:</label>
+    <input name="email" id="email" type="email" placeholder="your email">
+    <label for="password">Password:</label>
+    <!-- minlength="5" enforces a password of 5 characters, maxlength="10" truncates the password to 10 characters -->
+    <!-- the 'pattern' attribute can be used to force a minimum and maximum password length. the 'title' attribute is the error message if the password doesn't match the pattern. -->
+    <input name="password" id="password" type="password" pattern="[0-9a-zA-Z]{5,10}" placeholder="your password" title="Minimum password length is 5. Max is 10." required>
+    </div>
+
+    <!-- birthday | three drop down menus | the selected attribute makes it default-->
+    <div>
+    <label for="birthday">Birthday:</label>
+    <select id="birthday" name="birthday_month" required> <!-- birthday month -->
+        <option selected disabled>Month</option>
+        <option>Jan</option>
+        <option>Feb</option>
+        <option>Mar</option>
+        <option>Apr</option>
+        <option>May</option>
+        <option>Jun</option>
+        <option>Jul</option>
+        <option>Aug</option>
+        <option>Sep</option>
+        <option>Oct</option>
+        <option>Nov</option>
+        <option>Dec</option>
+    </select>
+
+    <select id="birthday" name="birthday_day" required> <!-- birthday day -->
+        <option selected disabled>Day</option> <!-- disabled shows it but doesn't make it selectable -->
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+    </select>
+
+    <select id="birthday" name="birthday_year" required> <!-- birthday year -->
+        <option selected disabled>Year</option> <!-- disabled shows it but doesn't make it selectable -->
+        <option>1960</option>
+        <option>1961</option>
+        <option>1962</option>
+        <option>1963</option>
+        <option>1964</option>
+        <option>1965</option>
+        <option>1966</option>
+        <option>1967</option>
+        <option>1968</option>
+        <option>1969</option>
+        <option>1970</option>
+        <option>1971</option>
+        <option>1972</option>
+        <option>1973</option>
+        <option>1974</option>
+        <option>1975</option>
+        <option>1976</option>
+        <option>1977</option>
+        <option>1978</option>
+        <option>1979</option>
+        <option>1980</option>
+        <option>1981</option>
+        <option>1982</option>
+        <option>1983</option>
+        <option>1984</option>
+        <option>1985</option>
+        <option>1986</option>
+        <option>1987</option>
+        <option>1988</option>
+        <option>1989</option>
+        <option>1990</option>
+        <option>1991</option>
+        <option>1992</option>
+        <option>1993</option>
+        <option>1994</option>
+        <option>1995</option>
+        <option>1996</option>
+        <option>1997</option>
+        <option>1998</option>
+        <option>1999</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2003</option>
+        <option>2004</option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+    </select>
+
+    </div>
+
+    <!-- checkbox for agreement -->
+    <label for="agreement">I agree to the terms and conditions</label>
+    <input id="agreement" name="agreement" type="Checkbox">
+    <!-- button for submit -->
+    <input type="submit">
+
+</form>
+</body>
+</html>

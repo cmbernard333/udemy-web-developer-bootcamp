@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdowns and Radio Buttons Demo</title>
+</head>
+<body>
+<!-- using separate label tags for each one -->
+<p>
+<label for="subscription">Subscribe?</label>
+<input id="subscription" name="subscription" type="Radio">
+</p>
+
+<p>
+<label for="demo-checkbox">Checkbox</label>
+<input id="demo-checkbox" name="demo-checkbox" type="Checkbox">
+</p>
+
+<p>
+Do you prefer cats or dogs?
+</p>
+
+<!-- including multiple radio buttons in a form and using the same exact same 'name' attribute for all of them makes it only allow one choice  -->
+<form>
+    <label for="dogs">Dog</label>
+    <!-- the value attribute indicates that 'petChoice' will be set to "dogs"-->
+    <input name="petChoice" id="dogs" type="radio" value="dogs">
+    <label for="cats">Cats</label>
+    <!-- the value attribute indicates that 'petChoice' will be set to "cats"-->
+    <input name="petChoice" id ="cats" type="radio" value="cats">
+
+    <p>
+    Whats your favorite color?
+    </p>
+    <!-- creates a drop down menu with each choice as an <option> -->
+    <!-- name is the URL parameter-->
+    <!-- option is the inner tag that specifies an option in the dropdown -->
+    <select id="color" name="color">
+        <option value="roja">Red</option>
+        <option value="amarillo">Yellow</option>
+        <option value="azul">Blue</option>  
+        <option value="turquesa">Turquoise</option>
+    </select>
+
+    <p>
+    <textarea name="paragraph" rows="20" cols="20"></textarea>
+    </p>
+
+    <button>Go!</button> <!-- button is last thing in the form it  will submit the form --> 
+
+</form>
+
+</body>
+</html>
